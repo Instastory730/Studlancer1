@@ -3,105 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studlancer - Student Work Exchange Platform</title>
+    <title>Studlancer - Main Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            color: #333;
+            text-align: center;
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #e9f5f9, #ffffff);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-        .header {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #2c3e50;
-            color: white;
-            margin-bottom: 20px;
-        }
-
-        .header h1 {
-            margin: 0;
+        h1 {
             font-size: 2.5rem;
-        }
-
-        .header h2 {
-            margin: 5px 0 0 0;
-            font-size: 1.2rem;
-        }
-
-        .section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .section h2 {
             color: #2c3e50;
-            margin-bottom: 20px;
         }
 
         .button {
-            display: inline-block;
+            display: block;
             background-color: #4CAF50;
             color: white;
-            font-size: 1rem;
-            font-weight: bold;
-            padding: 10px 20px;
-            margin: 10px 5px;
-            border-radius: 5px;
+            font-size: 1.2rem;
+            padding: 15px 25px;
+            margin: 15px 0;
             text-decoration: none;
-            cursor: pointer;
+            border-radius: 8px;
             transition: background-color 0.3s ease;
         }
 
         .button:hover {
             background-color: #45a049;
         }
-
-        .holiday-calendar img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
     </style>
 </head>
 <body>
-
-    <div class="header">
-        <h1>Studlancer</h1>
-        <h2>Where Students Get Everything</h2>
-    </div>
-
-    <!-- Freelancing Section -->
-    <div class="section" id="freelancing">
-        <h2>Freelancing</h2>
-        <p>Join our platform to collaborate, offer, or request freelance tasks. Connect with other students and grow together!</p>
-        <a class="button" href="https://wa.me/+918581805009?text=Hello%20I%20would%20like%20more%20information%20about%20your%20projects" target="_blank">Freelancing Contact</a>
-    </div>
-
-    <!-- Study Zone Section -->
-    <div class="section" id="study-zone">
-        <h2>Study Zone</h2>
-        <a class="button" href="https://www.dce-darbhanga.org/" target="_blank">Visit DCE Darbhanga Website</a>
-        <a class="button" href="http://beu-bih.ac.in/BEUP/Default.aspx" target="_blank">Visit BEU University Website</a>
-        <div class="holiday-calendar">
-            <h3>BEU University Holiday Calendar</h3>
-            <img src="holiday-calendar.jpg" alt="Holiday Calendar of BEU University">
-        </div>
-    </div>
-
-    <!-- Entertainment Zone Section -->
-    <div class="section" id="entertainment-zone">
-        <h2>Entertainment Zone</h2>
-        <p>Stay entertained with live cricket updates and other leisure activities!</p>
-        <a class="button" href="https://www.cricbuzz.com/" target="_blank">Live Cricket Scores</a>
-    </div>
-
+    <h1>Welcome to Studlancer</h1>
+    <a class="button" href="freelancing.html">Freelancing Zone</a>
+    <a class="button" href="study-zone.html">Study Zone</a>
+    <a class="button" href="entertainment-zone.html">Entertainment Zone</a>
 </body>
 </html>
