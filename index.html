@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studlancer - Student Work Exchange Platform</title>
+    <style>
+        /* Overall Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e9f5f9, #ffffff); /* Light aesthetic gradient background */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Centered content box */
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        /* Header Text */
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-top: -10px;
+            margin-bottom: 30px;
+        }
+
+        /* Button Styling */
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 12px 20px;
+            margin: 10px 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Content Sections */
+        .content {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #333333;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+    </style>
+    <script>
+        function showContent(id) {
+            document.querySelectorAll('.content').forEach(content => content.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function openWhatsApp() {
+            window.open("https://wa.me/+918581805009?text=Hello%20I%20would%20like%20more%20information%20about%20your%20projects", "_blank");
+        }
+    </script>
+</head>
+<body>
+
+    <div class="content-box">
+        <!-- Main Header -->
+        <h1>Studlancer</h1>
+        <h2>Where Students Help Students Achieve Success</h2>
+
+        <!-- Navigation Buttons -->
+        <a class="button" onclick="showContent('about')">About Us</a>
+        <a class="button" onclick="showContent('how-it-works')">How It Works</a>
+        <a class="button" onclick="openWhatsApp()">Contact Us</a>
+        <a class="button" href="sample%201.pdf" download="Sample1.pdf">Sample</a>
+
+        <!-- Hidden Content Sections -->
+        <div id="about" class="content">
+            <h2>About Us</h2>
+            <p>Studlancer is a platform for students to offer or request work from other students, all for fair payment. Whether you need help with assignments, projects, or freelance work, Studlancer brings students together to collaborate and succeed.</p>
+        </div>
+
+        <div id="how-it-works" class="content">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Sign up and create your profile.</li>
+                <li>Post a task or browse available tasks.</li>
+                <li>Negotiate and agree on a fair price for the work.</li>
+                <li>Complete the task and receive payment securely.</li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+</html>
